@@ -1,0 +1,43 @@
+
+.galeriaProducto {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    max-width: 1000px;
+}
+
+/* Estilo de las imágenes en la galería */
+.galeriaProducto img {
+    width: calc(33.333% - 10px); /* Ajusta el ancho de las imágenes */
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+/* Efecto al pasar el mause sobre las imágenes */
+.galeriaProducto img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+/* Efecto al pasar el mouse sobre las imágenes */
+.galeriaProducto img:hover {
+    transform: scale(1.1); /* Aumenta el tamaño ligeramente al pasar el mouse */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Añadiendo una animación suave para el cambio de imágenes */
+@keyframes fadeInOut {
+    0%, 100% { opacity: 0; transform: scale(0.9); } /* Inicio y fin con opacidad baja y tamaño reducido */
+    50% { opacity: 1; transform: scale(1); } /* Centro de la animación con opacidad completa y tamaño normal */
+}
+
+.galeriaProducto img {
+    animation: fadeInOut 6s infinite; /* Aplicando la animación a cada imagen */
+}

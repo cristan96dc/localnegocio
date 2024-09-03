@@ -1,0 +1,84 @@
+.quotes {
+  margin: 40px auto; /* Centra el contenedor de citas */
+  background-color: rgba(255, 255, 255, 0.8); /* Fondo semi-transparente */
+  border-radius: 10px; /* Bordes redondeados */
+  padding: 30px; /* Espacio interno */
+  max-width: 800px;
+  width: 90%; /* Responsivo para diferentes tamaños de pantalla */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Sombra más pronunciada */
+  position: relative; /* Posicionamiento relativo para botones */
+  overflow: hidden; /* Esconde desbordamientos */
+}
+
+/* Estilo para las citas */
+.quote {
+  font-family: 'Arial', sans-serif;
+  font-size: 18px; /* Tamaño de fuente adecuado */
+  line-height: 1.6; /* Espaciado entre líneas */
+  color: #333;
+  display: none; /* Todas las citas están ocultas por defecto */
+  text-align: center; /* Centrado del texto */
+  opacity: 0; /* Ocultamos con opacidad inicialmente */
+  transition: opacity 0.5s ease; /* Transición suave */
+}
+
+.quote.active {
+  display: block; /* Mostramos solo la cita activa */
+  opacity: 1; /* Opacidad completa para cita activa */
+}
+
+/* Estilo para los botones de navegación */
+.quote-navigation {
+  position: absolute; /* Posicionamiento absoluto dentro del contenedor */
+  top: 50%; /* Centrado vertical */
+  transform: translateY(-50%); /* Ajuste para centrar */
+  font-size: 24px; /* Tamaño de fuente grande */
+  color: #ff69b4; /* Color llamativo */
+  background-color: transparent; /* Fondo transparente */
+  border: none; /* Sin bordes */
+  cursor: pointer; /* Indicador de clic */
+  z-index: 10; /* Sobrepone a otros elementos */
+  transition: color 0.3s ease; /* Transición suave para hover */
+}
+
+.quote-navigation:hover {
+  color: #333; /* Cambia el color al pasar el mouse */
+}
+
+.quote-navigation.prev {
+  left: 20px; /* Botón de navegación a la izquierda */
+}
+
+.quote-navigation.next {
+  right: 20px; /* Botón de navegación a la derecha */
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+  .quotes {
+    padding: 20px; /* Menos espacio interno para pantallas pequeñas */
+    max-width: 90%; /* Aumenta el ancho máximo para pantallas más pequeñas */
+  }
+
+  .quote {
+    font-size: 16px; /* Tamaño de fuente más pequeño */
+  }
+
+  .quote-navigation {
+    font-size: 20px; /* Ajusta el tamaño de las flechas */
+  }
+}
+
+@media (max-width: 480px) {
+  .quotes {
+    padding: 15px; /* Reduce el padding aún más en pantallas muy pequeñas */
+  }
+
+  .quote {
+    font-size: 14px; /* Fuente más pequeña para dispositivos móviles */
+  }
+
+  .quote-navigation {
+    font-size: 18px; /* Flechas más pequeñas */
+  }
+}

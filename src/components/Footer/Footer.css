@@ -1,0 +1,22 @@
+footer#fin {
+  background-color: #991057;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+}
+.contact {
+  margin-bottom: 10px;
+}
+
+.contact a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.contact a:hover {
+  text-decoration: underline;
+}
+

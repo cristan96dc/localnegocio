@@ -1,0 +1,60 @@
+.container {
+  background-color: rgba(255, 255, 255, 0.8); /* Fondo semi-transparente para mayor legibilidad */
+  border-radius: 10px;
+  padding: 20px;
+  max-width: 800px;
+  width: 90%; /* Cambiado de 100% a 90% para espacio en dispositivos pequeños */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 20px auto; /* Esto centra el contenedor */
+}
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center; /* Alinea verticalmente los elementos */
+  background-color: #ff69b4;
+  padding: 10px 0;
+  margin-top: 20px;
+  border-radius: 5px;
+  flex-wrap: wrap; /* Permite que los elementos se envuelvan en múltiples filas en pantallas pequeñas */
+}
+
+.navbar a {
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  font-size: 20px; /* Ajustado para que sea más responsivo */
+  font-family: 'Comic Sans MS', cursive;
+  margin: 5px; /* Reducido para pantallas pequeñas */
+  transition: background-color 0.3s, color 0.3s;
+  border-radius: 5px; /* Mejora la apariencia en dispositivos táctiles */
+}
+
+.navbar a:hover {
+  background-color: #fff;
+  color: #ff69b4;
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column; /* Cambia de fila a columna en pantallas pequeñas */
+    padding: 20px 0; /* Aumenta el padding para más espacio */
+  }
+  
+  .navbar a {
+    font-size: 18px; /* Fuente más pequeña para móviles */
+    padding: 10px 15px; /* Padding más pequeño */
+    width: 100%; /* Ocupa todo el ancho */
+    text-align: center; /* Centra el texto */
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar a {
+    font-size: 16px; /* Fuente aún más pequeña para pantallas muy pequeñas */
+  }
+
+  .container {
+    padding: 15px; /* Reduce el padding en pantallas muy pequeñas */
+  }
+}
