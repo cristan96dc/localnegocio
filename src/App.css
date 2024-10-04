@@ -3,7 +3,7 @@
 body {
   font-family: 'Lobster', cursive;
   background-image: radial-gradient(circle at top center, 
-   rgb(213, 124, 141), rgb(214, 70, 102), rgb(204, 15, 101));
+   rgb(213, 124, 141), rgb(214, 70, 102), rgb(214, 70, 102));
   margin: 0;
   min-height: 100vh;
   text-align: center;

@@ -37,7 +37,6 @@
 
 @media (max-width: 768px) {
   .navbar {
-    flex-direction: column; /* Cambia de fila a columna en pantallas pequeñas */
     padding: 20px 0; /* Aumenta el padding para más espacio */
   }
   
