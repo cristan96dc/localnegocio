@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage":  "https://cristan96dc.github.io/Elprogreso_negocio",  
+  "homepage":  "https://cristan96dc.github.io/localnegocio",  
   "scripts": {
     "dev": "vite",
     "build": "vite build",
